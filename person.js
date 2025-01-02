@@ -14,7 +14,7 @@ class Person
     }
     
 
-    multipleInterest(){
+    multipleInterests(){
         let allButLast = this.interests.slice(0,-1).join(", ");
         let last = this.interests[this.interests.length - 1];
         let listInterests = [allButLast, last].sort().join(" and ");
@@ -22,17 +22,17 @@ class Person
         
     }
     
-    singleInterest(){
+    singleInterests(){
         return "Hello, my name is " + this.name + ", my gender is " + this.gender + " and I am " + this.age + " years old. My interest is " + this.interests;
         
     }
 
     hello(){
         if (this.interests.length > 1){
-            return this.multipleInterest() + ".";
+            return this.multipleInterests() + ".";
         }
         else if (this.interests.length === 1){
-           return this.singleInterest() + "."
+           return this.singleInterests() + "."
        }
        else{
          return "I have no Interests"
