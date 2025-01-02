@@ -38,7 +38,8 @@ class Person
          return "I have no Interests"
        }
     }
-    
+
+//* TO DO 3/Jan/2025 : Update code and use in Javascript, Use template literals
 //let person = new Person('Ryan', 30, 'male',['being a hardarse', 'agile', 'ssd hard drives']);
 //let person = new Person('Ryan', 30, 'male',['tea','cake']);
 //let person = new Person('Ryan', 30, 'male',['puppies']);
