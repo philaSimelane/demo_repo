@@ -23,7 +23,7 @@ class Person
     }
     
     singleInterest(){
-        return "Hello, my name is " + this.name + ", my gender is " + this.gender + " and I am " + this.age + " years old. My interest is " + this.interest + "."
+        return "Hello, my name is " + this.name + ", my gender is " + this.gender + " and I am " + this.age + " years old. My interest is " + this.interests;
         
     }
 
@@ -32,21 +32,19 @@ class Person
             return this.multipleInterest() + ".";
         }
         else if (this.interests.length === 1){
-           return this.mingleInterest()
+           return this.singleInterest() + "."
        }
        else{
          return "I have no Interests"
        }
     }
-
-//* TO DO 3/Jan/2025 : Update code and use in Javascript, Use template literals
+}
+        
+// To do: use template literals
 //let person = new Person('Ryan', 30, 'male',['being a hardarse', 'agile', 'ssd hard drives']);
 //let person = new Person('Ryan', 30, 'male',['tea','cake']);
 //let person = new Person('Ryan', 30, 'male',['puppies']);
 //let person = new Person('Ryan', 30, 'male',[]);
-
-
-
-let greeting = person.hello();
-console.log(greeting);
+//let greeting = person.hello();
+//console.log(greeting)
 module.exports = { Person };
